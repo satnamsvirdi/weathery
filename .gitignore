@@ -25,3 +25,6 @@ yarn.lock
 
 # enviromnet files
 .env
+
+# log file
+debug.log*
