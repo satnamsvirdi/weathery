@@ -3,6 +3,7 @@ import { useState } from "react";
 function App() {
   const [weatherData, setWeatherData] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const fetchDataByCity = async (cityName) => {
     const apiKey = "7b130bb6b2e00f735a3023b3b5e375bb";
@@ -20,6 +21,7 @@ function App() {
     if (fetchedData.cod === 200) {
       setWeatherData(fetchedData);
       setError("");
+      setLoading(false);
     } else {
       setError({
         cod: fetchedData.cod,
@@ -31,11 +33,15 @@ function App() {
 
   return (
     <div className="App">
-      <SearchWidget fetchDataByCity={fetchDataByCity} />
+      <SearchWidget
+        fetchDataByCity={fetchDataByCity}
+        loading={loading}
+        setLoading={setLoading}
+      />
       {error ? (
         <WeatherCard error={error} />
       ) : (
-        <WeatherCard weatherData={weatherData} />
+        <WeatherCard weatherData={weatherData} loading={loading} />
       )}
     </div>
   );
@@ -43,14 +49,18 @@ function App() {
 
 // //
 
-const SearchWidget = ({ fetchDataByCity }) => {
+const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
   const [cityName, setCityName] = useState("");
+
+  let disabled = loading ? "disabled" : "";
+
   const handleCityChange = (e) => {
     setCityName(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     if (cityName.trim()) {
       fetchDataByCity(cityName);
     } else {
@@ -67,7 +77,7 @@ const SearchWidget = ({ fetchDataByCity }) => {
           onChange={handleCityChange}
           value={cityName}
         />
-        <button>Search</button>
+        <button disabled={disabled}>Search</button>
       </form>
     </>
   );
@@ -75,7 +85,7 @@ const SearchWidget = ({ fetchDataByCity }) => {
 
 // //
 
-const WeatherCard = ({ weatherData, error }) => {
+const WeatherCard = ({ weatherData, error, loading }) => {
   let cardData;
   if (weatherData) {
     cardData = <div>has data</div>;
@@ -90,7 +100,7 @@ const WeatherCard = ({ weatherData, error }) => {
   return (
     <>
       <h3>Card Data </h3>
-      <div>{cardData}</div>
+      <div>{loading ? "loading..." : cardData}</div>
       <section className="hidden">
         <h4>Test DIV below</h4>
         <div>
