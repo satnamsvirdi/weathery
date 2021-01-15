@@ -27,6 +27,7 @@ function App() {
         cod: fetchedData.cod,
         message: fetchedData.message,
       });
+      setLoading(false);
       // console.log(`${fetchedData.cod}: ${fetchedData.message}`);
     }
   };
@@ -61,11 +62,14 @@ const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+
     if (cityName.trim()) {
       fetchDataByCity(cityName);
     } else {
       alert("Please type city name in the search box");
+      setLoading(false);
     }
+    setCityName("");
   };
 
   return (
