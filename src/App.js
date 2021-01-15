@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function App() {
   const [weatherData, setWeatherData] = useState("");
   const [error, setError] = useState("");
@@ -9,21 +10,22 @@ function App() {
 
     // reset state data before fetch
     setWeatherData("");
-    setError(null);
+    setError("");
 
     const fetchedData = await fetch(fetchURL)
       .then((response) => response.json())
-      .then((data) => data);
+      .then((data) => data)
+      .catch((err) => console.log("ERROR: ", err));
 
     if (fetchedData.cod === 200) {
       setWeatherData(fetchedData);
-      setError(null);
+      setError("");
     } else {
       setError({
         cod: fetchedData.cod,
         message: fetchedData.message,
       });
-      console.warn(`${fetchedData.cod}: ${fetchedData.message}`);
+      // console.log(`${fetchedData.cod}: ${fetchedData.message}`);
     }
   };
 
@@ -31,7 +33,7 @@ function App() {
     <div className="App">
       <SearchWidget fetchDataByCity={fetchDataByCity} />
       {error ? (
-        <WeatherCard weatherData={weatherData} error={error} />
+        <WeatherCard error={error} />
       ) : (
         <WeatherCard weatherData={weatherData} />
       )}
@@ -75,7 +77,6 @@ const SearchWidget = ({ fetchDataByCity }) => {
 
 const WeatherCard = ({ weatherData, error }) => {
   let cardData;
-
   if (weatherData) {
     cardData = <div>has data</div>;
   } else {
