@@ -161,7 +161,7 @@ const WeatherCard = ({ weatherData, error, loading }) => {
 
   if (weatherData) {
     cardData = (
-      <div className="card">
+      <>
         <div className="card-top">
           <div className="card-info-container">
             <div className="card-info-city">
@@ -267,7 +267,7 @@ const WeatherCard = ({ weatherData, error, loading }) => {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   } else {
     if (error) {
@@ -279,7 +279,7 @@ const WeatherCard = ({ weatherData, error, loading }) => {
 
   return (
     <div className="card-container">
-      <div>{loading ? "loading..." : cardData}</div>
+      <div className="card">{loading ? "loading..." : cardData}</div>
     </div>
   );
 };
