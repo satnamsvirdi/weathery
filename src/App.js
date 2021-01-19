@@ -280,46 +280,6 @@ const WeatherCard = ({ weatherData, error, loading }) => {
   return (
     <div className="card-container">
       <div>{loading ? "loading..." : cardData}</div>
-      <section className="hidden">
-        <h4>Test DIV below</h4>
-        <div>
-          {weatherData ? (
-            <div>
-              <p>{weatherData ? weatherData?.name : "loading..."}</p>
-              <p>{weatherData ? weatherData.coord?.lat : " loading..."}</p>
-              <p>{weatherData ? weatherData.coord?.lon : " loading..."}</p>
-              <p>
-                {weatherData ? weatherData.main?.feels_like : " loading..."}
-              </p>
-              <p>{weatherData ? weatherData.main?.temp : " loading..."}</p>
-              <p>{weatherData ? weatherData.main?.temp_max : " loading..."}</p>
-              <p>{weatherData ? weatherData.main?.temp_min : " loading..."}</p>
-              <p>{weatherData ? weatherData.main?.pressure : " loading..."}</p>
-              <p>{weatherData ? weatherData.main?.humidity : " loading..."}</p>
-              <p>{weatherData ? weatherData.sys?.country : " loading..."}</p>
-              <p>{weatherData ? weatherData.sys?.sunrise : " loading..."}</p>
-              <p>{weatherData ? weatherData.sys?.sunset : " loading..."}</p>
-              <p>{weatherData ? weatherData?.timezone : " loading..."}</p>
-              <p>{weatherData ? weatherData?.visibility : " loading..."}</p>
-              <p>
-                {weatherData
-                  ? weatherData.weather[0]?.description
-                  : " loading..."}
-              </p>
-              <p>
-                {weatherData ? weatherData.weather[0]?.main : " loading..."}
-              </p>
-              <p>
-                {weatherData ? weatherData.weather[0]?.icon : " loading..."}
-              </p>
-              <p>{weatherData ? weatherData.wind?.degree : " loading..."}</p>
-              <p>{weatherData ? weatherData.wind?.speed : " loading..."}</p>
-            </div>
-          ) : (
-            "No weather data yet..."
-          )}
-        </div>
-      </section>
     </div>
   );
 };
