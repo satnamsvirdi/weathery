@@ -1,0 +1,235 @@
+.app {
+	background-color: red;
+	min-height: 100vh;
+	/*height: 100%;*/
+	min-width: 100vw;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blue; /* TODO: fill actuall color here*/
+	flex-wrap: nowrap;
+	padding: 0.7rem 0.4rem;
+	height: 27pt;
+}
+
+.brand {
+	/*background-color: green;*/
+	flex-basis: 10%;
+	display: flex;
+}
+.brand-image-container {
+	/*background-color: green;*/
+}
+.brand-image {
+	display: block;
+	width: 36pt;
+	height: auto;
+	/*
+	display: block;
+	width: 30pt;
+	height: 30pt;*/
+	/*margin: 0.1rem 0.3rem;*/
+}
+.brand-name {
+}
+
+.search-container {
+	/*background-color: blue;*/
+	flex-basis: 80%;
+}
+.form {
+	display: flex;
+	margin: 0 0.5rem;
+	/*border: 1pt solid #ddd;*/
+	/*border-radius: 0.26rem;*/
+}
+.form-input {
+	border: 0;
+	outline: 0;
+	flex-basis: 75%;
+	padding: 0.6rem 0.45rem;
+	font-size: 0.9rem;
+	border-top-left-radius: 0.2rem;
+	border-bottom-left-radius: 0.2rem;
+}
+.btn {
+	outline: 0;
+	border: 0;
+	flex-basis: 25%;
+	padding: 0.6rem;
+	border-top-right-radius: 0.2rem;
+	border-bottom-right-radius: 0.2rem;
+	font-size: 0.9rem;
+}
+.btn-primary {
+}
+
+.switcher {
+	/*background-color: green;*/
+	flex-basis: 10%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.switcher-btn {
+	outline: 0;
+	border: 0;
+	display: block;
+	padding: 0.6rem;
+	width: 2.3rem; /*
+	height: 2rem;*/
+	border-radius: 0.2rem;
+}
+
+.card-container {
+	/*max-width: 100vw;*/
+	background: white;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 6%);
+	margin-bottom: 3rem;
+}
+.card {
+	/*background-color: green;*/
+	padding: 0.8rem;
+	margin-top: 1rem;
+}
+.card-top {
+	background-color: skyblue;
+	border-radius: 10px;
+}
+.card-info-container {
+	width: 100%;
+	/*background-color: green;*/
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	text-align: center;
+}
+.card-info-city {
+	/*background-color: #eee;*/
+}
+.city-name {
+	margin: 0;
+	margin: 1rem 0 0.2rem 0;
+}
+.city-location {
+	margin: 0;
+	margin-bottom: 0.6rem;
+	font-size: 0.9rem;
+	color: #999;
+}
+.card-info-weather {
+	/*background-color: blue;*/
+	display: flex;
+	justify-content: center;
+	padding: 0.6rem 1rem 0.6rem 0rem;
+}
+.weather-icon {
+	/*background-color: green;*/
+	min-width: 40%;
+	margin-left: 0%;
+}
+.weather-icon-image {
+	height: 60pt;
+	margin: 0.4rem;
+}
+.weather-info {
+	/*background-color: #ddd;*/
+	min-width: 50%;
+	display: flex;
+	flex-direction: column;
+	/*padding: auto auto auto 0;*/
+	/*justify-content: flex-start;*/
+}
+.temp {
+	/*background-color: red;*/
+	margin: 0;
+	padding: 0.2rem 0 0 0;
+	text-align: left;
+	/*margin: 0.8rem;*/
+	font-size: 3rem;
+}
+.temp strong {
+	font-weight: 500;
+}
+.desc {
+	margin: 0;
+	padding: 0 0.3rem 0.3rem 0;
+	text-align: left;
+}
+
+.card-info-feelslike p {
+	margin: 0;
+	margin: 0.6rem 0 1rem 0;
+	color: #f1f1f1;
+	font-size: 0.9rem;
+}
+
+.card-bottom {
+	/*background-color: green;*/
+	margin-top: 1rem;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.col {
+	/*flex-basis: 50%;*/
+	display: flex;
+	/*margin: 0 0 0 0.3rem;*/
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 0.6rem;
+}
+
+.col:nth-child(odd) {
+	flex-basis: calc(50% - 0.25rem - 2px);
+	margin-right: 0.25rem;
+}
+.col:nth-child(even) {
+	flex-basis: calc(50% - 0.25rem - 2px);
+	margin-left: 0.25rem;
+}
+.col:nth-last-child(1),
+.col:nth-last-child(2) {
+	/*background-color: blue;*/
+	margin-bottom: 0rem;
+}
+
+.col-icon {
+	display: block;
+	width: 48px;
+	background-color: #f1f1f1;
+	margin: 0.8rem 0.2rem 0.8rem 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+}
+.col-data {
+	margin: 0.8rem 0;
+	padding: 0 0 0 0.4rem;
+}
+.data-heading {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #999;
+	margin: 0 0 0.2rem 0;
+}
+.data-body {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
