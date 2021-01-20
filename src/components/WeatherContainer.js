@@ -1,6 +1,7 @@
 import WeatherData from "./WeatherData";
 import Error from "./Error";
 import Loading from "./Loading";
+import InitialScreen from "./InitialScreen";
 
 const WeatherContainer = ({ weatherData, error, loading }) => {
 	let cardData;
@@ -30,16 +31,14 @@ const WeatherContainer = ({ weatherData, error, loading }) => {
 		cardData = <WeatherData data={weatherData} parseTime={parseTime} />;
 	} else {
 		if (error) {
-			cardData = <Loading error={error} />;
+			cardData = <Error error={error} />;
 		} else {
-			cardData = <div className="card">No data, no error</div>;
+			cardData = <InitialScreen />;
 		}
 	}
 
 	return (
-		<div className="card-container">
-			<div className="card">{loading ? <Loading /> : cardData}</div>
-		</div>
+		<div className="card-container">{loading ? <Loading /> : cardData}</div>
 	);
 };
 
