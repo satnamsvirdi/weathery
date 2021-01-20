@@ -1,4 +1,5 @@
 import DetailCard from "./DetailCard";
+import { MapIcon, MapPinIcon } from "./FeatherIcons";
 
 const units = {
 	windspeed: " m/s",
@@ -13,7 +14,7 @@ const units = {
 };
 
 const WeatherData = ({ data, parseTime }) => {
-	console.log(data.weather[0].icon);
+	console.log(data);
 
 	const iconPath = `./assets/${data.weather[0].icon}.png`;
 
@@ -22,11 +23,17 @@ const WeatherData = ({ data, parseTime }) => {
 			<div className="card-top">
 				<div className="card-info-container">
 					<div className="card-info-city">
-						<h4 className="city-name">
+						<h3 className="city-name">
+							<span className="icon-wrapper">
+								<MapPinIcon small />
+							</span>{" "}
 							{data.name}, {data.sys.country}
-						</h4>
+						</h3>
 						<p className="city-location">
-							{data.coord.lon} {data.coord.lat}
+							<span className="icon-wrapper">
+								<MapIcon small />
+							</span>{" "}
+							{data.coord.lon}, {data.coord.lat}
 						</p>
 					</div>
 
@@ -43,7 +50,10 @@ const WeatherData = ({ data, parseTime }) => {
 							<p className="temp">
 								<strong>{data.main.temp}°C</strong>
 							</p>
-							<p className="desc">{data.weather[0].main}</p>
+							<p className="desc">
+								{data.weather[0].main}
+								{data.weather[0].description}
+							</p>
 						</div>
 					</div>
 

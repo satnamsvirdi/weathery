@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { SearchIcon } from "./FeatherIcons";
+
 const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
   const [cityName, setCityName] = useState("delhi");
 
@@ -25,6 +27,9 @@ const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
   return (
     <div className="search-container">
       <form onSubmit={handleSubmit} className="form">
+        <div className="searchIcon">
+          <SearchIcon />
+        </div>
         <input
           className="form-input"
           type="text"
