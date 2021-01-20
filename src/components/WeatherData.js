@@ -50,10 +50,7 @@ const WeatherData = ({ data, parseTime }) => {
 							<p className="temp">
 								<strong>{data.main.temp}°C</strong>
 							</p>
-							<p className="desc">
-								{data.weather[0].main}
-								{data.weather[0].description}
-							</p>
+							<p className="desc">{data.weather[0].main}</p>
 						</div>
 					</div>
 

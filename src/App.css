@@ -1,31 +1,35 @@
 .app {
-	background-color: red;
+	background-color: yellow;
 	min-height: 100vh;
 	/*height: 100%;*/
 	min-width: 100vw;
 }
 
 header {
+	padding: 0;
 	display: flex;
-	justify-content: center;
+	/*justify-content: center;*/
 	align-items: center;
 	background-color: blue; /* TODO: fill actuall color here*/
 	flex-wrap: nowrap;
-	padding: 0.7rem 0.4rem;
-	height: 27pt;
+	/*padding: 0.7rem 0.4rem;*/
+	height: 100%;
+	padding: 0.6rem;
 }
 
 .brand {
-	/*background-color: green;*/
-	flex-basis: 10%;
+	/*background-color: yellow;*/
+	/*flex-basis: 10%;*/
 	display: flex;
+
+	/*width: 16vw;*/
 }
 .brand-image-container {
 	/*background-color: green;*/
 }
 .brand-image {
 	display: block;
-	width: 36pt;
+	width: 42pt;
 	height: auto;
 	/*
 	display: block;
@@ -37,16 +41,26 @@ header {
 }
 
 .search-container {
-	/*background-color: blue;*/
-	flex-basis: 80%;
+	/*background-color: red;*/
+	/*flex-basis: 75%;*/
+
+	/*width: 60vw;*/
+	/*display: block;*/
+	/*max-width: 60vw;*/
+	width: calc(80% - 0.6rem);
 }
 .form {
 	display: flex;
-	margin: 0 0.5rem;
-	/*border: 1pt solid #ddd;*/
-	/*border-radius: 0.26rem;*/
+	align-items: center;
+	/*align-content: center;*/
+	justify-content: center;
+	margin: 0 0.6rem;
 	background-color: #fff;
 	border-radius: 0.2rem;
+
+	/*width: 60vw;*/
+	height: 42px;
+	/*width: 90%;*/
 }
 .searchIcon {
 	/*background-color: red;*/
@@ -54,47 +68,58 @@ header {
 	justify-content: center;
 	align-items: center;
 	color: #999;
-	padding: 0 0 0 0.4rem;
+	padding: 0 10px;
 }
 .form-input {
 	border: 0;
 	outline: 0;
-	flex-basis: 75%;
-	padding: 0.6rem 0.45rem;
-	font-size: 0.9rem;
-	border-top-left-radius: 0.2rem;
-	border-bottom-left-radius: 0.2rem;
+	padding: 0.2rem 0;
+	font-size: 0.9em;
+	background-color: inherit;
+	width: 68%;
+	height: 30px;
 }
 .btn {
+	/*box-sizing: border-box;*/
 	outline: 0;
 	border: 0;
-	flex-basis: 25%;
-	padding: 0.6rem;
+	/*flex-basis: 25%;*/
+	padding: 0.7rem 0rem;
 	border-top-right-radius: 0.2rem;
 	border-bottom-right-radius: 0.2rem;
 	font-size: 0.9rem;
+	width: 50px;
+	height: 42px;
+	/*border: 1px solid;*/
+	/*border-color: red;*/
 }
 .btn-primary {
 }
 
 .switcher {
-	/*background-color: green;*/
-	flex-basis: 10%;
-
+	background-color: #eee;
+	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 42px;
+	width: 42px;
+	border-radius: 0.2rem;
 }
 
 .switcher-btn {
+	padding: 0;
 	outline: 0;
 	border: 0;
 	display: block;
+	height: 100%;
+	width: 100%;
 	padding: 0.6rem;
-	width: 2.3rem; /*
-	height: 2rem;*/
-	border-radius: 0.2rem;
+	background-color: transparent;
+	color: #333;
 }
+
+/*/////////////////////////////////////////////////////////////*/
 
 .card-container {
 	/*max-width: 100vw;*/

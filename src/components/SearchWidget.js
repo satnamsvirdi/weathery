@@ -33,12 +33,12 @@ const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
         <input
           className="form-input"
           type="text"
-          placeholder="Type location here, e.g. New York"
+          placeholder="Search city"
           onChange={handleCityChange}
           value={cityName}
         />
         <button disabled={disabled} className="btn btn-primary">
-          Search
+          Go
         </button>
       </form>
     </div>
