@@ -20,9 +20,19 @@ const WeatherContainer = ({ weatherData, error, loading }) => {
 		const hours = date.getHours();
 		const mins = date.getMinutes();
 
-		// switchTweleveHours(hours);
+		function checkAndAddPrefixZero(number) {
+			if (number < 10) {
+				return `0${number}`;
+			} else {
+				return number;
+			}
+		}
 
-		const time = `${switchToTweleveHours(hours)}:${mins}`;
+		let switchHours = switchToTweleveHours(hours);
+		let prefixedHours = checkAndAddPrefixZero(switchHours);
+		let prefixedMins = checkAndAddPrefixZero(mins);
+
+		const time = `${prefixedHours}:${prefixedMins}`;
 
 		return time;
 	};

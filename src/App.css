@@ -1,3 +1,9 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
 .app {
 	background-color: #eee;
 	/*min-height: 100vh;*/
@@ -51,6 +57,7 @@ header {
 	/*display: block;*/
 	/*max-width: 60vw;*/
 	width: calc(80% - 0.6rem);
+	/*display: flex;*/
 }
 .form {
 	display: flex;
@@ -66,12 +73,14 @@ header {
 	/*width: 90%;*/
 }
 .searchIcon {
-	/*background-color: red;*/
+	/*background-color: #ddd;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #999;
+	height: 42px;
 	padding: 0 10px;
+	/*box-sizing: border-box;*/
 }
 .form-input {
 	border: 0;
@@ -81,6 +90,9 @@ header {
 	background-color: inherit;
 	width: 68%;
 	height: 30px;
+	/*box-sizing: border-box;*/
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 .btn {
 	/*box-sizing: border-box;*/
@@ -252,6 +264,9 @@ header {
 	border: 1px solid #eee;
 	border-radius: 10px;
 	margin-bottom: 0.6rem;
+}
+.col:hover {
+	background-color: #eee;
 }
 
 .col:nth-child(odd) {
