@@ -1,0 +1,74 @@
+.card-top {
+	background-color: var(--card-top-bg);
+	border-radius: 10px;
+}
+.card-info-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.card-info-city {
+}
+.city-name {
+	margin: 0;
+	margin: 1rem 0 0.3rem 0;
+	line-height: 1.2rem;
+	color: var(--main-text);
+}
+.icon-wrapper {
+}
+.city-location {
+	margin: 0;
+	margin-bottom: 0.6rem;
+	font-size: 0.8rem;
+	color: var(--secondary-text);
+	vertical-align: middle;
+	line-height: 1.2rem;
+}
+.card-info-weather {
+	display: flex;
+	justify-content: center;
+	padding: 0.6rem 1rem 0.6rem 0rem;
+}
+.weather-icon {
+	min-width: 40%;
+	margin-left: 0%;
+}
+.weather-icon-image {
+	height: 60pt;
+	margin: 0.4rem;
+}
+.weather-info {
+	min-width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.temp {
+	margin: 0;
+	padding: 0.2rem 0 0 0;
+	text-align: left;
+	font-size: 3rem;
+}
+.temp strong {
+	font-weight: 400;
+	color: var(--main-text);
+}
+.desc {
+	margin: 0;
+	padding: 0 0.3rem 0.3rem 0;
+	text-align: left;
+	font-size: 0.97rem;
+	color: var(--third-text);
+}
+
+.card-info-feelslike p {
+	margin: 0;
+	margin: 0.5rem 0 1.3rem 0;
+	color: var(--third-text);
+	font-size: 0.9rem;
+}
+
+.card-bottom {
+	margin-top: 1rem;
+}

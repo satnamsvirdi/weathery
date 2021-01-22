@@ -1,6 +1,7 @@
 import { useState } from "react";
-
 import { SearchIcon } from "./FeatherIcons";
+
+import "./SearchWidget.css";
 
 const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
   const [cityName, setCityName] = useState("delhi");

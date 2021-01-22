@@ -1,11 +1,35 @@
+:root {
+	--header-color: #1eaad6;
+	--btn-primary: #126782;
+	--footer-color: #214450;
+	--body-bg: #e2eaf8;
+	--card-top-bg: #ade0eb;
+
+	--main-text: #18272c;
+	--secondary-text: #85a6af;
+	--third-text: #4d656f;
+	--darkgray-text: #7f7f7f;
+	--gray-text: #b8b8b8;
+	--white: #fff;
+
+	--border-radius: 0.2rem;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
 body {
+	overflow-x: hidden;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	box-sizing: border-box;
+	background-color: var(--body-bg);
 }
 
 code {
@@ -16,4 +40,16 @@ code {
 /* Utils*/
 .hidden {
 	display: none;
+}
+/* Link states */
+a {
+	color: var(--secondary-text);
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: var(--header-color);
+	text-decoration: underline;
+}
+a:visited {
 }

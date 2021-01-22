@@ -1,0 +1,23 @@
+.brand {
+	display: flex;
+}
+.brand-image-container {
+	width: 56px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brand-image {
+	display: block;
+	width: 90%;
+	height: 90%;
+}
+.brand-name {
+}
+
+@media (min-width: 768px) {
+	.brand-image-container {
+		margin-left: 0.8rem;
+	}
+}

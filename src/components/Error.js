@@ -1,3 +1,5 @@
+import "./Error.css";
+
 function Error({ error }) {
 	return (
 		<div className="test">

@@ -1,3 +1,5 @@
+import "./WeatherData.css";
+
 import DetailCard from "./DetailCard";
 import { MapIcon, MapPinIcon } from "./FeatherIcons";
 

@@ -1,3 +1,5 @@
+import "./Error.css";
+
 const InitialScreen = () => {
 	return (
 		<div className="test">

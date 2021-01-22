@@ -1,3 +1,4 @@
+import "./DetailCard.css";
 import {
 	ArrowUpIcon,
 	ArrowDownIcon,

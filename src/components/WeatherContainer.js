@@ -1,3 +1,5 @@
+import "./WeatherContainer.css";
+
 import WeatherData from "./WeatherData";
 import Error from "./Error";
 import Loading from "./Loading";
