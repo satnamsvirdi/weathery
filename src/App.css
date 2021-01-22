@@ -1,3 +1,20 @@
+:root {
+	--header-color: #1eaad6;
+	--btn-primary: #126782;
+	--footer-color: #214450;
+	--body-bg: #e2eaf8;
+	--card-top-bg: #ade0eb;
+
+	--main-text: #18272c;
+	--secondary-text: #85a6af;
+	--third-text: #4d656f;
+	--darkgray-text: #7f7f7f;
+	--gray-text: #b8b8b8;
+	--white: #fff;
+
+	--border-radius: 0.2rem;
+}
+
 *,
 *:after,
 *:before {
@@ -5,11 +22,8 @@
 }
 
 .app {
-	background-color: #eee;
-	/*min-height: 100vh;*/
+	background-color: var(--body-bg);
 	min-height: 100vh;
-	/*height: auto;*/
-	/*height: 100%;*/
 	min-width: 100vw;
 	padding-bottom: 3.2rem;
 }
@@ -19,7 +33,7 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: blue; /* TODO: fill actuall color here*/
+	background-color: var(--header-color); /* TODO: fill actuall color here*/
 	flex-wrap: nowrap;
 	/*padding: 0.7rem 0.4rem;*/
 	height: 100%;
@@ -65,8 +79,8 @@ header {
 	/*align-content: center;*/
 	justify-content: center;
 	margin: 0 0.6rem;
-	background-color: #fff;
-	border-radius: 0.2rem;
+	background-color: var(--white);
+	border-radius: var(--border-radius);
 
 	/*width: 60vw;*/
 	height: 42px;
@@ -77,7 +91,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #999;
+	color: var(--darkgray-text);
 	height: 42px;
 	padding: 0 10px;
 	/*box-sizing: border-box;*/
@@ -93,6 +107,7 @@ header {
 	/*box-sizing: border-box;*/
 	flex-grow: 1;
 	flex-shrink: 1;
+	color: var(--gray-text);
 }
 .btn {
 	/*box-sizing: border-box;*/
@@ -105,6 +120,8 @@ header {
 	font-size: 0.9rem;
 	width: 50px;
 	height: 42px;
+	background-color: var(--btn-primary);
+	color: var(--white);
 	/*border: 1px solid;*/
 	/*border-color: red;*/
 }
@@ -112,7 +129,7 @@ header {
 }
 
 .switcher {
-	background-color: #eee;
+	/*background-color: #eee;*/
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -130,14 +147,14 @@ header {
 	width: 100%;
 	padding: 0.6rem;
 	background-color: transparent;
-	color: #333;
-	border-radius: 0.2rem;
+	color: var(--white);
+	border-radius: var(--border-radius);
 }
 
 /*/////////////////////////////////////////////////////////////*/
 
 .card-container {
-	background-color: white;
+	background-color: var(--white);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 6%);
 	/*margin-bottom: 1.6rem;*/
 	padding: 0.8rem;
@@ -146,7 +163,7 @@ header {
 }
 .test {
 	/*background-color: #f1f1f1;*/
-	color: #666;
+	color: var(--darkgray-text);
 	height: 70vh;
 	display: flex;
 	flex-direction: column;
@@ -165,7 +182,7 @@ header {
 	/*display: block;*/
 }
 .card-top {
-	background-color: skyblue;
+	background-color: var(--card-top-bg);
 	border-radius: 10px;
 }
 .card-info-container {
@@ -183,6 +200,7 @@ header {
 	margin: 1rem 0 0.3rem 0;
 	/*background-color: green;*/
 	line-height: 1.2rem;
+	color: var(--main-text);
 }
 .icon-wrapper {
 	/*background-color: red;*/
@@ -193,7 +211,7 @@ header {
 	margin: 0;
 	margin-bottom: 0.6rem;
 	font-size: 0.8rem;
-	color: #999;
+	color: var(--secondary-text);
 	vertical-align: middle;
 	line-height: 1.2rem;
 }
@@ -230,18 +248,20 @@ header {
 }
 .temp strong {
 	font-weight: 400;
+	color: var(--main-text);
 }
 .desc {
 	margin: 0;
 	padding: 0 0.3rem 0.3rem 0;
 	text-align: left;
 	font-size: 0.97rem;
+	color: var(--third-text);
 }
 
 .card-info-feelslike p {
 	margin: 0;
 	margin: 0.5rem 0 1.3rem 0;
-	color: #f1f1f1;
+	color: var(--third-text);
 	font-size: 0.9rem;
 }
 
@@ -260,7 +280,7 @@ header {
 	/*flex-basis: 50%;*/
 	display: flex;
 	/*margin: 0 0 0 0.3rem;*/
-	background-color: #fff;
+	background-color: var(--white);
 	border: 1px solid #eee;
 	border-radius: 10px;
 	margin-bottom: 0.6rem;
@@ -285,9 +305,9 @@ header {
 
 .col-icon {
 	display: block;
-	width: 48px;
+	width: 42px;
 	/*background-color: #f1f1f1;*/
-	color: #999;
+	color: var(--gray-text);
 	margin: 0.8rem 0.2rem 0.8rem 0.8rem;
 	display: flex;
 	align-items: center;
@@ -305,7 +325,7 @@ header {
 	text-transform: uppercase;
 	font-size: 0.75rem;
 	font-weight: 500;
-	color: #999;
+	color: var(--gray-text);
 	margin: 0 0 0.2rem 0;
 }
 .data-body {
@@ -313,6 +333,7 @@ header {
 	padding: 0;
 	font-size: 1.2rem;
 	font-weight: 500;
+	color: var(--main-text);
 }
 
 @media (min-width: 768px) {
@@ -345,7 +366,7 @@ header {
 	}
 
 	.search-container {
-		background-color: red;
+		/*background-color: red;*/
 		max-width: 500px; /*
 		flex-shrink: 2;
 		flex-grow: 0;*/
