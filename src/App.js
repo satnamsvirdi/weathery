@@ -5,6 +5,7 @@ import SearchWidget from "./components/SearchWidget";
 import Logo from "./components/Logo";
 import WeatherContainer from "./components/WeatherContainer";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import Footer from "./components/Footer";
 
 function App() {
   const [weatherData, setWeatherData] = useState("");
@@ -56,6 +57,7 @@ function App() {
       ) : (
         <WeatherContainer weatherData={weatherData} loading={loading} />
       )}
+      <Footer />
     </div>
   );
 }
