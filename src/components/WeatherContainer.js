@@ -48,7 +48,9 @@ const WeatherContainer = ({ weatherData, error, loading }) => {
 	}
 
 	return (
-		<div className="card-container">{loading ? <Loading /> : cardData}</div>
+		<div className="card-container">
+			<div className="card">{loading ? <Loading /> : cardData}</div>
+		</div>
 	);
 };
 
