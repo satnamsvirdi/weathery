@@ -33,68 +33,44 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: var(--header-color); /* TODO: fill actuall color here*/
+	background-color: var(--header-color);
 	flex-wrap: nowrap;
-	/*padding: 0.7rem 0.4rem;*/
 	height: 100%;
 	padding: 0.6rem;
 }
 
 .brand {
-	/*background-color: yellow;*/
-	/*flex-basis: 10%;*/
 	display: flex;
-
-	/*width: 16vw;*/
 }
 .brand-image-container {
-	/*background-color: green;*/
 }
 .brand-image {
 	display: block;
 	width: 42pt;
 	height: auto;
-	/*
-	display: block;
-	width: 30pt;
-	height: 30pt;*/
-	/*margin: 0.1rem 0.3rem;*/
 }
 .brand-name {
 }
 
 .search-container {
-	/*background-color: red;*/
-	/*flex-basis: 75%;*/
-
-	/*width: 60vw;*/
-	/*display: block;*/
-	/*max-width: 60vw;*/
 	width: calc(80% - 0.6rem);
-	/*display: flex;*/
 }
 .form {
 	display: flex;
 	align-items: center;
-	/*align-content: center;*/
 	justify-content: center;
 	margin: 0 0.6rem;
 	background-color: var(--white);
 	border-radius: var(--border-radius);
-
-	/*width: 60vw;*/
 	height: 42px;
-	/*width: 90%;*/
 }
 .searchIcon {
-	/*background-color: #ddd;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--darkgray-text);
 	height: 42px;
 	padding: 0 10px;
-	/*box-sizing: border-box;*/
 }
 .form-input {
 	border: 0;
@@ -104,16 +80,13 @@ header {
 	background-color: inherit;
 	width: 68%;
 	height: 30px;
-	/*box-sizing: border-box;*/
 	flex-grow: 1;
 	flex-shrink: 1;
 	color: var(--gray-text);
 }
 .btn {
-	/*box-sizing: border-box;*/
 	outline: 0;
 	border: 0;
-	/*flex-basis: 25%;*/
 	padding: 0.7rem 0rem;
 	border-top-right-radius: 0.2rem;
 	border-bottom-right-radius: 0.2rem;
@@ -122,14 +95,11 @@ header {
 	height: 42px;
 	background-color: var(--btn-primary);
 	color: var(--white);
-	/*border: 1px solid;*/
-	/*border-color: red;*/
 }
 .btn-primary {
 }
 
 .switcher {
-	/*background-color: #eee;*/
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -156,13 +126,10 @@ header {
 .card-container {
 	background-color: var(--white);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 6%);
-	/*margin-bottom: 1.6rem;*/
 	padding: 0.8rem;
 	margin-top: 1.6rem;
-	/*min-height: 70vh;*/
 }
 .test {
-	/*background-color: #f1f1f1;*/
 	color: var(--darkgray-text);
 	height: 70vh;
 	display: flex;
@@ -173,13 +140,11 @@ header {
 	border: 2px dashed #ddd;
 }
 .test-heading {
-	/*display: block;*/
 }
 .test-text {
 	text-align: center;
 	max-width: 70%;
 	font-weight: 400;
-	/*display: block;*/
 }
 .card-top {
 	background-color: var(--card-top-bg);
@@ -187,27 +152,21 @@ header {
 }
 .card-info-container {
 	width: 100%;
-	/*background-color: green;*/
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 .card-info-city {
-	/*background-color: #eee;*/
 }
 .city-name {
 	margin: 0;
 	margin: 1rem 0 0.3rem 0;
-	/*background-color: green;*/
 	line-height: 1.2rem;
 	color: var(--main-text);
 }
 .icon-wrapper {
-	/*background-color: red;*/
-	/*line-height: 0.8rem;*/
 }
 .city-location {
-	/*background-color: green;*/
 	margin: 0;
 	margin-bottom: 0.6rem;
 	font-size: 0.8rem;
@@ -216,13 +175,11 @@ header {
 	line-height: 1.2rem;
 }
 .card-info-weather {
-	/*background-color: blue;*/
 	display: flex;
 	justify-content: center;
 	padding: 0.6rem 1rem 0.6rem 0rem;
 }
 .weather-icon {
-	/*background-color: green;*/
 	min-width: 40%;
 	margin-left: 0%;
 }
@@ -231,19 +188,14 @@ header {
 	margin: 0.4rem;
 }
 .weather-info {
-	/*background-color: #ddd;*/
 	min-width: 50%;
 	display: flex;
 	flex-direction: column;
-	/*padding: auto auto auto 0;*/
-	/*justify-content: flex-start;*/
 }
 .temp {
-	/*background-color: red;*/
 	margin: 0;
 	padding: 0.2rem 0 0 0;
 	text-align: left;
-	/*margin: 0.8rem;*/
 	font-size: 3rem;
 }
 .temp strong {
@@ -266,7 +218,6 @@ header {
 }
 
 .card-bottom {
-	/*background-color: green;*/
 	margin-top: 1rem;
 }
 
@@ -277,9 +228,7 @@ header {
 }
 
 .col {
-	/*flex-basis: 50%;*/
 	display: flex;
-	/*margin: 0 0 0 0.3rem;*/
 	background-color: var(--white);
 	border: 1px solid #eee;
 	border-radius: 10px;
@@ -297,16 +246,10 @@ header {
 	flex-basis: calc(50% - 0.25rem - 2px);
 	margin-left: 0.25rem;
 }
-.col:nth-last-child(1),
-.col:nth-last-child(2) {
-	/*background-color: blue;*/
-	/*margin-bottom: 0rem;*/
-}
 
 .col-icon {
 	display: block;
 	width: 42px;
-	/*background-color: #f1f1f1;*/
 	color: var(--gray-text);
 	margin: 0.8rem 0.2rem 0.8rem 0.8rem;
 	display: flex;
@@ -338,39 +281,25 @@ header {
 
 @media (min-width: 768px) {
 	.app {
-		/*background-color: red;*/
 	}
 	header {
 		justify-content: space-between;
-		/*background-color: #555;*/
 		max-width: /*100vw*/ ;
 		padding-left: 0;
 		padding-right: 0;
-		/*margin-left: 0;*/
-		/*margin-right: 0;*/
 		max-width: calc(100% - 0.6rem * 2);
-		/*overflow: hidden;*/
 	}
 
 	.brand {
-		/*		flex-basis: 20%;
-		flex-shrink: 0;
-		flex-grow: 0;
-*/
 	}
 	.brand-image-container {
-		/*background-color: green;*/
 		margin-left: 0.8rem;
 	}
 	.brand-image {
 	}
 
 	.search-container {
-		/*background-color: red;*/
-		max-width: 500px; /*
-		flex-shrink: 2;
-		flex-grow: 0;*/
-
+		max-width: 500px;
 		margin: 0 0 0 0;
 	}
 	.form {
@@ -382,9 +311,6 @@ header {
 
 	.switcher {
 		background-color: unset;
-		/*		flex-shrink: 2;
-		margin-left: auto;
-*/
 		margin-right: 0.8rem;
 	}
 
