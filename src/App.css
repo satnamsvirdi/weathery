@@ -2,7 +2,6 @@
 	--header-color: black;
 	--btn-primary: green;
 	--footer-color: red;
-	--body-bg: blue;
 	--card-top-bg: yellow;
 
 	--main-text: pink;
@@ -10,15 +9,12 @@
 	--third-text: beige;
 	--darkgray-text: skyblue;
 	--gray-text: fuchsia;
-	--white: #fff;
-
-	--border-radius: 0.2rem;
+	--white: #333;
 }
 .app.light-theme {
 	--header-color: #1eaad6;
 	--btn-primary: #126782;
 	--footer-color: #214450;
-	--body-bg: #e2eaf8;
 	--card-top-bg: #ade0eb;
 
 	--main-text: #18272c;
@@ -27,8 +23,6 @@
 	--darkgray-text: #7f7f7f;
 	--gray-text: #b8b8b8;
 	--white: #fff;
-
-	--border-radius: 0.2rem;
 }
 
 header {

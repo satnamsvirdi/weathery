@@ -1,3 +1,7 @@
+:root {
+	--body-bg: blue;
+	--border-radius: 0.2rem;
+}
 *,
 *:after,
 *:before {
