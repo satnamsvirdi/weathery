@@ -1,20 +1,3 @@
-:root {
-	--header-color: #1eaad6;
-	--btn-primary: #126782;
-	--footer-color: #214450;
-	--body-bg: #e2eaf8;
-	--card-top-bg: #ade0eb;
-
-	--main-text: #18272c;
-	--secondary-text: #85a6af;
-	--third-text: #4d656f;
-	--darkgray-text: #7f7f7f;
-	--gray-text: #b8b8b8;
-	--white: #fff;
-
-	--border-radius: 0.2rem;
-}
-
 *,
 *:after,
 *:before {

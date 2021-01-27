@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 import SearchWidget from "./components/SearchWidget";
@@ -11,6 +11,7 @@ function App() {
   const [weatherData, setWeatherData] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(getDefaultTheme());
 
   const fetchDataByCity = async (cityName) => {
     const apiKey = "7b130bb6b2e00f735a3023b3b5e375bb";
@@ -41,8 +42,22 @@ function App() {
     }
   };
 
+  const handleThemeSwitcher = () => {
+    // console.log("Current Theme: ", darkTheme);
+    setDarkTheme(!darkTheme);
+  };
+
+  useEffect(() => {
+    localStorage.setItem("dark", JSON.stringify(darkTheme));
+  }, [darkTheme]);
+
+  function getDefaultTheme() {
+    const selectedTheme = JSON.parse(localStorage.getItem("dark"));
+    return selectedTheme || false;
+  }
+
   return (
-    <div className="app">
+    <div className={darkTheme ? "app dark-theme" : "app light-theme"}>
       <Header>
         <Logo />
         <SearchWidget
@@ -50,7 +65,10 @@ function App() {
           loading={loading}
           setLoading={setLoading}
         />
-        <ThemeSwitcher />
+        <ThemeSwitcher
+          handleThemeSwitcher={handleThemeSwitcher}
+          darkTheme={darkTheme}
+        />
       </Header>
       {error ? (
         <WeatherContainer error={error} />
