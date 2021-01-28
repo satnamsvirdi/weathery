@@ -64,7 +64,7 @@ function App() {
       </Helmet>
 
       <Header>
-        <Logo />
+        <Logo darkTheme={darkTheme} />
         <SearchWidget
           fetchDataByCity={fetchDataByCity}
           loading={loading}

@@ -1,12 +1,13 @@
 import "./Logo.css";
 
-const Logo = () => {
+const Logo = ({ darkTheme }) => {
+	const logoSrc = `./assets/logo-${darkTheme ? "dark" : "light"}.svg`;
 	return (
 		<div className="brand">
 			<span className="brand-image-container">
 				<a href="/">
 					<img
-						src="./assets/logo.png"
+						src={logoSrc}
 						alt=""
 						className="brand-image"
 						width="36"

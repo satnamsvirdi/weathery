@@ -5,7 +5,7 @@ import { MapIcon, MapPinIcon } from "./FeatherIcons";
 
 const units = {
 	windspeed: " m/s",
-	pressure: " hPa",
+	pressure: "hPa",
 	percent: "%",
 	degree: "°",
 	degreeCel: "°C",
@@ -16,10 +16,10 @@ const units = {
 };
 
 const WeatherData = ({ data, parseTime }) => {
-	console.log(data);
+	// console.log(data);
 
-	const iconPath = `./assets/${data.weather[0].icon}.png`;
-	//const iconPath = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+	const iconPath = `./assets/${data.weather[0].icon}.svg`;
+	// const iconPath = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 	return (
 		<>
 			<div className="card-top">
