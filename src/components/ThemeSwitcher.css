@@ -16,8 +16,11 @@
 	width: 100%;
 	padding: 0.6rem;
 	background-color: transparent;
-	color: var(--white);
+	color: var(--theme-switcher-icon);
 	border-radius: var(--border-radius);
+}
+.switcher-btn:hover {
+	background-color: var(--theme-switcher-bg);
 }
 
 @media (min-width: 768px) {
@@ -29,6 +32,6 @@
 	.switcher-btn {
 		width: 42px;
 		background-color: transparent;
-		color: white;
+		/*color: white;*/
 	}
 }

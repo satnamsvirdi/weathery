@@ -1,11 +1,96 @@
 :root {
-	--body-bg: #e2eaf8;
+	/*--body-bg: #e2eaf8;*/
 	--border-radius: 0.2rem;
+
+	--white: #ffffff;
+	--black: #000000;
+
+	--blue-000: #f5faff;
+	--blue-100: #c5e2fc;
+	--blue-200: #97caf7;
+	--blue-300: #6cb2ef;
+	--blue-400: #4399e5;
+	--blue-500: #1e80d6;
+	--blue-600: #1d65a5;
+	--blue-700: #194a76;
+	--blue-800: #123049;
+	--blue-900: #091520;
+
+	--gray-000: #e5e5e5;
+	--gray-100: #cccccc;
+	--gray-200: #b2b2b2;
+	--gray-300: #999999;
+	--gray-400: #808080;
+	--gray-500: #666666;
+	--gray-600: #4d4d4d;
+	--gray-700: #333333;
+	--gray-800: #1a1a1a;
+	--gray-900: var(--black);
+
+	--bluish-gray-000: #e3e6e8;
+	--bluish-gray-100: #c7ccd1;
+	--bluish-gray-200: #abb3ba;
+	--bluish-gray-300: #8f9aa3;
+	--bluish-gray-400: #73808c;
+	--bluish-gray-500: #5c6770;
+	--bluish-gray-600: #454d54;
+	--bluish-gray-700: #2e3338;
+	--bluish-gray-800: #171a1c;
+	--bluish-gray-900: var(--black);
 }
 *,
 *:after,
 *:before {
 	box-sizing: border-box;
+}
+
+body,
+body.light-theme {
+	--header-bg: var(--blue-400);
+	--logo-text: var(--white);
+	--searchbar-text: var(--gray-400);
+	--searchbar-icon: var(--gray-500);
+	--backup: #6c6c6c;
+	--searchbar-bg: var(--blue-000);
+	--btn-bg: var(--blue-600);
+	--btn-text: var(--white);
+	--theme-switcher-icon: var(--white);
+	--theme-switcher-bg: var(--blue-500);
+	--body-bg: var(--blue-000);
+	--weather-card-bg: var(--white);
+	--card-top-bg: var(--blue-200);
+	--text-top-primary: var(--blue-700);
+	--text-top-secondary: var(--blue-600);
+	--text-top-third: var(--blue-500);
+	--text-top-forth: var(--blue-400);
+	--detail-heading: var(--gray-300);
+	--detail-body: var(--gray-500);
+	--detail-hover: var(--gray-000);
+	--card-border-color: var(--blue-100);
+	--author-text: var(--blue-500);
+}
+body.dark-theme {
+	--header-bg: var(--bluish-gray-500);
+	--logo-text: var(--bluish-gray-000);
+	--searchbar-text: var(--bluish-gray-400);
+	--searchbar-icon: var(--bluish-gray-400);
+	--searchbar-bg: var(--bluish-gray-100);
+	--btn-bg: var(--bluish-gray-600);
+	--btn-text: var(--white);
+	--theme-switcher-icon: var(--bluish-gray-100);
+	--theme-switcher-bg: var(--bluish-gray-400);
+	--body-bg: var(--bluish-gray-700);
+	--weather-card-bg: var(--bluish-gray-600);
+	--card-top-bg: var(--bluish-gray-500);
+	--text-top-primary: var(--bluish-gray-000);
+	--text-top-secondary: var(--bluish-gray-100);
+	--text-top-third: var(--bluish-gray-200);
+	--text-top-forth: var(--bluish-gray-300);
+	--detail-heading: var(--bluish-gray-300);
+	--detail-body: var(--bluish-gray-100);
+	--detail-hover: var(--bluish-gray-500);
+	--card-border-color: transparent;
+	--author-text: var(--bluish-gray-300);
 }
 
 body {
@@ -30,12 +115,12 @@ code {
 }
 /* Link states */
 a {
-	color: var(--secondary-text);
+	color: var(--author-text);
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: var(--header-color);
+	color: red;
 	text-decoration: underline;
 }
 a:visited {

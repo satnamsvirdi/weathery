@@ -19,7 +19,7 @@ const WeatherData = ({ data, parseTime }) => {
 	console.log(data);
 
 	const iconPath = `./assets/${data.weather[0].icon}.png`;
-
+	//const iconPath = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 	return (
 		<>
 			<div className="card-top">
@@ -43,7 +43,7 @@ const WeatherData = ({ data, parseTime }) => {
 						<div className="weather-icon">
 							<img
 								src={iconPath}
-								alt="sun"
+								alt="weather icon"
 								className="weather-icon-image"
 							/>
 						</div>

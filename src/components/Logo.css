@@ -14,10 +14,19 @@
 	height: 90%;
 }
 .brand-name {
+	display: none;
 }
 
 @media (min-width: 768px) {
 	.brand-image-container {
 		margin-left: 0.8rem;
+	}
+
+	.brand-name {
+		display: none;
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: var(--logo-text);
+		margin-left: 0.4rem;
 	}
 }

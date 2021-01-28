@@ -14,7 +14,7 @@
 	margin: 0;
 	margin: 1rem 0 0.3rem 0;
 	line-height: 1.2rem;
-	color: var(--main-text);
+	color: var(--text-top-primary);
 }
 .icon-wrapper {
 }
@@ -22,7 +22,7 @@
 	margin: 0;
 	margin-bottom: 0.6rem;
 	font-size: 0.8rem;
-	color: var(--secondary-text);
+	color: var(--text-top-forth);
 	vertical-align: middle;
 	line-height: 1.2rem;
 }
@@ -52,20 +52,20 @@
 }
 .temp strong {
 	font-weight: 400;
-	color: var(--main-text);
+	color: var(--text-top-primary);
 }
 .desc {
 	margin: 0;
 	padding: 0 0.3rem 0.3rem 0;
 	text-align: left;
 	font-size: 0.97rem;
-	color: var(--third-text);
+	color: var(--text-top-secondary);
 }
 
 .card-info-feelslike p {
 	margin: 0;
 	margin: 0.5rem 0 1.3rem 0;
-	color: var(--third-text);
+	color: var(--text-top-third);
 	font-size: 0.9rem;
 }
 

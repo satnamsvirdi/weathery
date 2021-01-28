@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import { Helmet } from "react-helmet";
 
 import SearchWidget from "./components/SearchWidget";
 import Logo from "./components/Logo";
@@ -57,7 +58,11 @@ function App() {
   }
 
   return (
-    <div className={darkTheme ? "app dark-theme" : "app light-theme"}>
+    <div>
+      <Helmet>
+        <body className={darkTheme ? "dark-theme" : "light-theme"} />
+      </Helmet>
+
       <Header>
         <Logo />
         <SearchWidget
