@@ -39,7 +39,7 @@ const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
           value={cityName}
         />
         <button disabled={disabled} className="btn">
-          Search
+          Go
         </button>
       </form>
     </div>
