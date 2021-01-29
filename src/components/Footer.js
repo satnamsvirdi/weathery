@@ -1,4 +1,5 @@
 import "./Footer.css";
+// import { HeartIcon } from "./FeatherIcons";
 
 const Footer = () => {
 	return (

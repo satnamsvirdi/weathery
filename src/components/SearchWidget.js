@@ -38,7 +38,7 @@ const SearchWidget = ({ fetchDataByCity, loading, setLoading }) => {
           onChange={handleCityChange}
           value={cityName}
         />
-        <button disabled={disabled} className="btn btn-primary">
+        <button disabled={disabled} className="btn">
           Search
         </button>
       </form>

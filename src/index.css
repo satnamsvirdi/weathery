@@ -50,12 +50,12 @@ body.light-theme {
 	--logo-text: var(--white);
 	--searchbar-text: var(--gray-400);
 	--searchbar-icon: var(--gray-500);
-	--backup: #6c6c6c;
 	--searchbar-bg: var(--blue-000);
-	--btn-bg: var(--blue-600);
+	--btn-bg: var(--blue-500);
 	--btn-text: var(--white);
 	--theme-switcher-icon: var(--white);
-	--theme-switcher-bg: var(--blue-500);
+	--theme-switcher-hover-bg: var(--blue-600);
+	--theme-switcher-hover-text: var(--blue-000);
 	--body-bg: var(--blue-000);
 	--weather-card-bg: var(--white);
 	--card-top-bg: var(--blue-200);
@@ -66,19 +66,25 @@ body.light-theme {
 	--detail-heading: var(--gray-300);
 	--detail-body: var(--gray-500);
 	--detail-hover: var(--gray-000);
-	--card-border-color: var(--blue-100);
-	--author-text: var(--blue-500);
+	--card-border-color: var(--bluish-gray-000);
+	--author-text: var(--bluish-gray-400);
+	--btn-hover-bg: var(--blue-600);
+	--btn-hover-text: var(--blue-000);
+	--btn-disabled-bg: var(--blue-300);
+	--btn-disabled-text: var(--blue-100);
+	--card-inner-border: var(--bluish-gray-000);
 }
 body.dark-theme {
 	--header-bg: var(--bluish-gray-500);
 	--logo-text: var(--bluish-gray-000);
-	--searchbar-text: var(--bluish-gray-400);
-	--searchbar-icon: var(--bluish-gray-400);
+	--searchbar-text: var(--bluish-gray-500);
+	--searchbar-icon: var(--bluish-gray-500);
 	--searchbar-bg: var(--bluish-gray-100);
 	--btn-bg: var(--bluish-gray-600);
 	--btn-text: var(--white);
 	--theme-switcher-icon: var(--bluish-gray-100);
-	--theme-switcher-bg: var(--bluish-gray-400);
+	--theme-switcher-hover-bg: var(--blue-400);
+	--theme-switcher-hover-text: var(--blue-000);
 	--body-bg: var(--bluish-gray-700);
 	--weather-card-bg: var(--bluish-gray-600);
 	--card-top-bg: var(--bluish-gray-500);
@@ -91,6 +97,11 @@ body.dark-theme {
 	--detail-hover: var(--bluish-gray-500);
 	--card-border-color: transparent;
 	--author-text: var(--bluish-gray-300);
+	--btn-hover-bg: var(--blue-400);
+	--btn-hover-text: var(--blue-000);
+	--btn-disabled-bg: var(--bluish-gray-200);
+	--btn-disabled-text: var(--gray-400);
+	--card-inner-border: var(--bluish-gray-500);
 }
 
 body {
@@ -120,8 +131,8 @@ a {
 }
 a:hover,
 a:focus {
-	color: red;
-	text-decoration: underline;
+	/*color: var(--bluish-gray-600);*/
+	text-decoration: underline wavy var(--blue-400);
 }
 a:visited {
 }

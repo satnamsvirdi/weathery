@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 10px;
-	border: 1pt solid var(--detail-hover);
+	border: 1pt solid var(--card-inner-border);
 }
 .test-heading {
 }

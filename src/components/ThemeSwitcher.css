@@ -20,7 +20,8 @@
 	border-radius: var(--border-radius);
 }
 .switcher-btn:hover {
-	background-color: var(--theme-switcher-bg);
+	background-color: var(--theme-switcher-hover-bg);
+	color: var(--theme-switcher-hover-text);
 }
 
 @media (min-width: 768px) {

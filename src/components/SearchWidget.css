@@ -10,6 +10,7 @@
 	border-radius: var(--border-radius);
 	height: 42px;
 }
+
 .searchIcon {
 	display: flex;
 	justify-content: center;
@@ -34,15 +35,22 @@
 	outline: 0;
 	border: 0;
 	padding: 0.7rem 1rem;
-	border-top-right-radius: 0.2rem;
-	border-bottom-right-radius: 0.2rem;
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
 	font-size: 0.9rem;
 	/*width: 50px;*/
 	height: 42px;
 	background-color: var(--btn-bg);
 	color: var(--btn-text);
 }
-.btn-primary {
+.btn:hover {
+	background-color: var(--btn-hover-bg);
+	color: var(--btn-hover-text);
+}
+.btn:disabled {
+	background-color: var(--btn-disabled-bg);
+	color: var(--btn-disabled-text);
+	cursor: not-allowed;
 }
 
 @media (min-width: 768px) {
