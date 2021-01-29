@@ -15,7 +15,7 @@ function App() {
   const [darkTheme, setDarkTheme] = useState(getDefaultTheme());
 
   const fetchDataByCity = async (cityName) => {
-    const apiKey = "7b130bb6b2e00f735a3023b3b5e375bb";
+    const apiKey = process.env.REACT_OPENWEATHER_API;
     const fetchURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     // reset state data before fetch
@@ -38,13 +38,11 @@ function App() {
           message: fetchedData.message,
         });
         setLoading(false);
-        // console.log(`${fetchedData.cod}: ${fetchedData.message}`);
       }
     }
   };
 
   const handleThemeSwitcher = () => {
-    // console.log("Current Theme: ", darkTheme);
     setDarkTheme(!darkTheme);
   };
 

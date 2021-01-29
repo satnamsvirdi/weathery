@@ -45,6 +45,8 @@ const WeatherData = ({ data, parseTime }) => {
 								src={iconPath}
 								alt="weather icon"
 								className="weather-icon-image"
+								height
+								width
 							/>
 						</div>
 
