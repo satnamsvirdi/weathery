@@ -1,6 +1,6 @@
 .test {
 	color: var(--detail-body);
-	height: 70vh;
+	height: 63vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

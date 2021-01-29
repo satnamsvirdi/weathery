@@ -15,7 +15,7 @@ function App() {
   const [darkTheme, setDarkTheme] = useState(getDefaultTheme());
 
   const fetchDataByCity = async (cityName) => {
-    const apiKey = process.env.REACT_OPENWEATHER_API;
+    const apiKey = process.env.REACT_APP_OPENWEATHER_API;
     const fetchURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     // reset state data before fetch
